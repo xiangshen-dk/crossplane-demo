@@ -3,9 +3,9 @@ kind: Bucket
 metadata:
   name: example
   labels:
-    example: \"true\"
+    example: "true"
   annotations:
-    crossplane.io/external-name: ${PROJECT_ID}-crossplane-bucket
+    crossplane.io/external-name: shenxiangshenxiang-gcp-solutions-demo4-crossplane-bucket
 spec:
   location: US
   storageClass: MULTI_REGIONAL
