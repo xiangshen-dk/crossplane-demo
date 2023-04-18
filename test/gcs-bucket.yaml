@@ -1,0 +1,14 @@
+apiVersion: storage.gcp.crossplane.io/v1alpha3
+kind: Bucket
+metadata:
+  name: example
+  labels:
+    example: \"true\"
+  annotations:
+    crossplane.io/external-name: ${PROJECT_ID}-crossplane-bucket
+spec:
+  location: US
+  storageClass: MULTI_REGIONAL
+  providerConfigRef:
+    name: default
+  deletionPolicy: Delete
